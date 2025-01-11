@@ -7,7 +7,7 @@ const { Content } = Layout;
 function App() {
   return (
     <Layout style={{ minHeight: '100vh' }}>
-      <Content style={{ marginLeft: 200 }}>
+      <Content>
         <Outlet />
       </Content>
     </Layout>
