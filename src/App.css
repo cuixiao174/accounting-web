@@ -22,17 +22,17 @@
 }
 
 /* 修复输入框文本可见性问题 */
-.ant-input,
+/* .ant-input,
 .ant-input-password {
   color: #000 !important;
   background-color: #fff !important;
   border-color: #d9d9d9 !important;
-}
+} */
 
-.ant-input::placeholder,
+/* .ant-input::placeholder,
 .ant-input-password::placeholder {
   color: rgba(0, 0, 0, 0.5) !important;
-}
+} */
 
 /* Glassmorphism effect */
 .card {
@@ -164,7 +164,7 @@
 .ant-picker {
   background: rgba(255, 255, 255, 0.1) !important;
   border-color: var(--glass-border) !important;
-  color: rgba(255, 255, 255, 0.8) !important;
+  /* color: rgba(255, 255, 255, 0.8) !important; */
 }
 
 .ant-input:hover,
