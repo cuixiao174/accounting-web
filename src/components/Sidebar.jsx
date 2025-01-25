@@ -35,29 +35,35 @@ function Sidebar() {
       }}
     >
       <div style={{ padding: 24, textAlign: 'center' }}>
-        <Avatar
-          size="large"
-          style={{ backgroundColor: '#1890ff', marginBottom: 8 }}
-        >
-          {user?.userName?.charAt(0).toUpperCase()}
-        </Avatar>
-        <Text strong style={{ color: '#fff', display: 'block' }}>
-          {user?.userName}
-        </Text>
+        <img
+          src="/img/accounting.png"
+          alt="Logo"
+          style={{
+            width: '100%',
+            maxWidth: '120px',
+            marginBottom: 16,
+            borderRadius: '8px',
+          }}
+        />
       </div>
 
       <Menu
         mode="inline"
         selectedKeys={[location.pathname]}
         style={{ flex: 1, borderRight: 0 }}
-      >
-        <Menu.Item key="/records" icon={<UnorderedListOutlined />}>
-          <Link to="/records">消费记录</Link>
-        </Menu.Item>
-        <Menu.Item key="/statistics" icon={<PieChartOutlined />}>
-          <Link to="/statistics">消费统计</Link>
-        </Menu.Item>
-      </Menu>
+        items={[
+          {
+            key: '/records',
+            icon: <UnorderedListOutlined />,
+            label: <Link to="/records">消费记录</Link>,
+          },
+          {
+            key: '/statistics',
+            icon: <PieChartOutlined />,
+            label: <Link to="/statistics">消费统计</Link>,
+          },
+        ]}
+      />
 
       <div style={{ padding: 16 }}>
         <Button

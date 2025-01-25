@@ -1,7 +1,12 @@
 import api from './index';
 
-export const getRecords = async (params) => {
-  return api.get('/records', { params });
+export const getRecords = async (userId) => {
+  const response = await api.get('/records', {
+    params: {
+      user_id: userId,
+    },
+  });
+  return response.content;
 };
 
 export const createRecord = async (record) => {

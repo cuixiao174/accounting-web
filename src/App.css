@@ -102,32 +102,16 @@
 }
 
 /* Table styles */
-.ant-table {
-  background: var(--glass);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
-  border-radius: 16px;
-  overflow: hidden;
-}
-
 .ant-table-thead > tr > th {
   background: rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid var(--glass-border);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 500;
 }
 
 .ant-table-tbody > tr > td {
   border-bottom: 1px solid var(--glass-border);
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.ant-table-tbody > tr:hover > td {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.ant-table-tbody > tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.02);
+  color: rgba(2, 2, 2, 0.8);
 }
 
 .ant-table-pagination.ant-pagination {
@@ -174,7 +158,7 @@
 }
 
 /* Main content layout */
-.main-content {
+/* .main-content {
   padding: 24px;
   margin-left: 200px;
   transition: margin 0.3s ease;
@@ -182,10 +166,10 @@
 
 .main-content.collapsed {
   margin-left: 80px;
-}
+} */
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   #root {
     padding: 1rem;
     justify-content: flex-start;
@@ -210,6 +194,7 @@
 .ant-layout-content {
   margin: 24px;
   padding: 24px;
+  width: 1000px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
